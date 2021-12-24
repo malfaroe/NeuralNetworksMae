@@ -8,6 +8,10 @@ Ex: net2 = Dense(sizes = [4,10,3], activations = [Sigmoid(), Softmax()], Loss = 
             epochs = EPOCHS, metric = Accuracy(), learning_rate = 0.05)
             For execution use method gradient_check(X, y, epsilon)"""
 
+
+import numpy as np
+
+
 class GradientChecking():
     def __init__(self, net):
         self.net = net
